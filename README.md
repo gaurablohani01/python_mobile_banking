@@ -21,11 +21,6 @@ This is a **console-based mobile banking system** written in Python. It simulate
 - Python 3.x
 - No external dependencies
 ---
-## ⚠️ Limitations
-- User data is stored in memory and lost after the program ends
-- Passwords are stored in plain text
-- Not suitable for production or real banking applications
-
 
 
 ## Disclaimer
