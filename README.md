@@ -1,26 +1,29 @@
-# 📱 Bank of Gaurab - Mobile Banking System
+# 🏦 Bank of Gaurab – Mobile Banking System
 
-This is a **console-based mobile banking system** written in Python. It simulates basic banking operations such as account creation, login, deposit, withdrawal, and balance checking.
-
----
-
-## ✨ Features
-
-- ✅ User Registration with username, full name, and password
-- 🔐 Secure Login for existing users
-- 💰 Deposit money into your account
-- 🏧 Withdraw money from your account (with balance check)
-- 📊 Check current account balance
-- 🔢 Unique 16-digit account number generation
-
-
+A terminal-based banking system written in Python that simulates mobile banking operations. Users can create bank accounts, log in securely, deposit or withdraw money, transfer funds, and check their account balance — all through a simple command-line interface.
 
 ---
 
-## 🛠️ Requirements
+## 📌 Features
+
+- ✅ Unique account number (16-digit) generation for each user
+- 🔐 Secure login system using username and password
+- 💰 Deposit and withdraw money
+- 🔁 Transfer funds between users (with name and account number verification)
+- 📈 Check account balance
+- ❌ Prevents duplicate usernames and self-transfers
+- 🧠 In-memory data storage (no external database/file storage)
+
+---
+
+## 🛠️ Technologies Used
+
 - Python 3.x
-- No external dependencies
+- Object-Oriented Programming (OOP)
+- Standard input/output for CLI-based interaction
+
 ---
+
 
 
 ## Disclaimer
