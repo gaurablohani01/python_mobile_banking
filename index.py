@@ -89,7 +89,6 @@ def mobile_banking_services_activate():
             amount=int(input("Enter the amount: "))
             if user_detail.check_requirement(amount):
                 transfer_acc=find_user(fund_transfer_acc)
-                print(transfer_acc.name)
                 if transfer_acc is None:
                     print("Account Number not found.")
                     continue
@@ -133,6 +132,9 @@ def start():
                 user_full_name=input("Enter your full name: ").title()
                 user_username=input("Enter the username: ").lower()
                 user_password=input("Enter your password: ")
+                if any(acc_user.username == user_username for acc_user in users):
+                    print("Account with this username already exists. Please try a different username.\n")
+                    continue  
                 create_user(user_username,user_full_name, user_password)
             elif ch==2:
                 mobile_banking_services_activate()
