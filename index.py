@@ -93,13 +93,16 @@ def mobile_banking_services_activate():
                     print("Account Number not found.")
                     continue
                 else:
-                    if transfer_acc.name == full_name:
-                        transfer_acc.deposit_amount(amount)
-                        user_detail.withdraw_amount(amount)
-                        print(f'Rs. {amount} has been transfered to {transfer_acc.account_number} number from {user_detail.account_number}. Remarks: {user_detail.name} to {transfer_acc.name}')
-                        print(f'Your new balance is {user_detail.check_balance()} ')
+                    if transfer_acc.account_number != user_detail.account_number:
+                        if transfer_acc.name == full_name:
+                            transfer_acc.deposit_amount(amount)
+                            user_detail.withdraw_amount(amount)
+                            print(f'Rs. {amount} has been transfered to {transfer_acc.account_number} number from {user_detail.account_number}. Remarks: {user_detail.name} to {transfer_acc.name}')
+                            print(f'Your new balance is {user_detail.check_balance()} ')
+                        else:
+                            print(f'Account with {full_name} didnt match')
                     else:
-                        print(f'Account with {full_name} didnt match')
+                        print("Cannot perform transcation with the same accout")
                 
 
         elif service==5:
